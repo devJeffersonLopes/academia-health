@@ -4,22 +4,17 @@
  */
 package view.membercrud;
 
-import controller.MemberListController;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Jefferson
  */
 public class MemberList extends javax.swing.JFrame {
 
-    private MemberListController memberListController;
     /**
      * Creates new form MenuPrincipal
      */
     public MemberList() {
         initComponents();
-        memberListController = new MemberListController();
     }
 
     /**
@@ -31,17 +26,17 @@ public class MemberList extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbImagem = new javax.swing.JLabel();
-        btnVoltar = new javax.swing.JButton();
-        lbPesquisarNome = new javax.swing.JLabel();
-        txtPesquisar = new javax.swing.JTextField();
-        scAlunos = new javax.swing.JScrollPane();
+        lbLogo = new javax.swing.JLabel();
+        btnBack = new javax.swing.JButton();
+        lbSearchByName = new javax.swing.JLabel();
+        txtSearchByName = new javax.swing.JTextField();
+        scrollMembers = new javax.swing.JScrollPane();
         tbAlunos = new javax.swing.JTable();
-        btnPesquisar = new javax.swing.JButton();
-        lbVisualizarAluno = new javax.swing.JButton();
-        lbEditarAluno = new javax.swing.JButton();
-        btnRemoverAluno = new javax.swing.JButton();
-        lbNovoAluno = new javax.swing.JButton();
+        btnSearchByName = new javax.swing.JButton();
+        btnVisualizeMember = new javax.swing.JButton();
+        btnUpdateMember = new javax.swing.JButton();
+        btnDeleteMember = new javax.swing.JButton();
+        btnAddMember = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
@@ -52,19 +47,19 @@ public class MemberList extends javax.swing.JFrame {
             }
         });
 
-        lbImagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logoPequena.png"))); // NOI18N
+        lbLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logoPequena.png"))); // NOI18N
 
-        btnVoltar.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back.png"))); // NOI18N
-        btnVoltar.setText("Voltar");
+        btnBack.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back.png"))); // NOI18N
+        btnBack.setText("Voltar");
 
-        lbPesquisarNome.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        lbPesquisarNome.setText("Pesquisar por nome");
+        lbSearchByName.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        lbSearchByName.setText("Pesquisar por nome");
 
-        txtPesquisar.setBackground(new java.awt.Color(255, 255, 255));
-        txtPesquisar.addActionListener(new java.awt.event.ActionListener() {
+        txtSearchByName.setBackground(new java.awt.Color(255, 255, 255));
+        txtSearchByName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPesquisarActionPerformed(evt);
+                txtSearchByNameActionPerformed(evt);
             }
         });
 
@@ -82,48 +77,48 @@ public class MemberList extends javax.swing.JFrame {
             }
         ));
         tbAlunos.getTableHeader().setReorderingAllowed(false);
-        scAlunos.setViewportView(tbAlunos);
+        scrollMembers.setViewportView(tbAlunos);
 
-        btnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search.png"))); // NOI18N
-        btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+        btnSearchByName.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search.png"))); // NOI18N
+        btnSearchByName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPesquisarActionPerformed(evt);
+                btnSearchByNameActionPerformed(evt);
             }
         });
 
-        lbVisualizarAluno.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        lbVisualizarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visualize.png"))); // NOI18N
-        lbVisualizarAluno.setText("Visualizar aluno");
-        lbVisualizarAluno.addActionListener(new java.awt.event.ActionListener() {
+        btnVisualizeMember.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnVisualizeMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visualize.png"))); // NOI18N
+        btnVisualizeMember.setText("Visualizar aluno");
+        btnVisualizeMember.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lbVisualizarAlunoActionPerformed(evt);
+                btnVisualizeMemberActionPerformed(evt);
             }
         });
 
-        lbEditarAluno.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        lbEditarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit.png"))); // NOI18N
-        lbEditarAluno.setText("Editar aluno");
-        lbEditarAluno.addActionListener(new java.awt.event.ActionListener() {
+        btnUpdateMember.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnUpdateMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit.png"))); // NOI18N
+        btnUpdateMember.setText("Editar aluno");
+        btnUpdateMember.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lbEditarAlunoActionPerformed(evt);
+                btnUpdateMemberActionPerformed(evt);
             }
         });
 
-        btnRemoverAluno.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnRemoverAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/delete.png"))); // NOI18N
-        btnRemoverAluno.setText("Remover aluno");
-        btnRemoverAluno.addActionListener(new java.awt.event.ActionListener() {
+        btnDeleteMember.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnDeleteMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/delete.png"))); // NOI18N
+        btnDeleteMember.setText("Remover aluno");
+        btnDeleteMember.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRemoverAlunoActionPerformed(evt);
+                btnDeleteMemberActionPerformed(evt);
             }
         });
 
-        lbNovoAluno.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        lbNovoAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add-user.png"))); // NOI18N
-        lbNovoAluno.setText("Novo aluno");
-        lbNovoAluno.addActionListener(new java.awt.event.ActionListener() {
+        btnAddMember.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnAddMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add-user.png"))); // NOI18N
+        btnAddMember.setText("Adicionar aluno");
+        btnAddMember.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lbNovoAlunoActionPerformed(evt);
+                btnAddMemberActionPerformed(evt);
             }
         });
 
@@ -135,25 +130,25 @@ public class MemberList extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(lbImagem)
+                        .addComponent(lbLogo)
                         .addGap(126, 126, 126)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbPesquisarNome)
-                            .addComponent(txtPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lbSearchByName)
+                            .addComponent(txtSearchByName, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(6, 6, 6)
-                        .addComponent(btnPesquisar))
+                        .addComponent(btnSearchByName))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(66, 66, 66)
-                        .addComponent(scAlunos, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(scrollMembers, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbNovoAluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbEditarAluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnRemoverAluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbVisualizarAluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnAddMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnUpdateMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnDeleteMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnVisualizeMember, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(btnVoltar)))
+                        .addComponent(btnBack)))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -161,76 +156,61 @@ public class MemberList extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbImagem)
+                    .addComponent(lbLogo)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(lbPesquisarNome)
+                        .addComponent(lbSearchByName)
                         .addGap(2, 2, 2)
-                        .addComponent(txtPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtSearchByName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(50, 50, 50)
-                        .addComponent(btnPesquisar)))
+                        .addComponent(btnSearchByName)))
                 .addGap(8, 8, 8)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scAlunos, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scrollMembers, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addComponent(lbNovoAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAddMember, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lbVisualizarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnVisualizeMember, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lbEditarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnUpdateMember, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnRemoverAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnDeleteMember, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(32, 32, 32)
-                .addComponent(btnVoltar)
+                .addComponent(btnBack)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesquisarActionPerformed
+    private void txtSearchByNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchByNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPesquisarActionPerformed
+    }//GEN-LAST:event_txtSearchByNameActionPerformed
 
-    private void lbVisualizarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbVisualizarAlunoActionPerformed
-        int id = memberListController.getSelectedMemberId(tbAlunos);
+    private void btnVisualizeMemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVisualizeMemberActionPerformed
         
-        memberListController.visualizeMember(this, id);
-    }//GEN-LAST:event_lbVisualizarAlunoActionPerformed
+    }//GEN-LAST:event_btnVisualizeMemberActionPerformed
 
-    private void lbEditarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbEditarAlunoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lbEditarAlunoActionPerformed
-
-    private void btnRemoverAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverAlunoActionPerformed
-        int id = memberListController.getSelectedMemberId(tbAlunos);
+    private void btnUpdateMemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateMemberActionPerformed
         
-        int rowsAffected = memberListController.deleteMember(id);
-        
-        if(rowsAffected > 0){
-            JOptionPane.showMessageDialog(null, "Registro excluído com sucesso!");
-            System.out.println("Linhas afetadas: "+rowsAffected);
-        }else{
-            JOptionPane.showMessageDialog(null, "Não foi possível excluir o registro");
-        }
-    }//GEN-LAST:event_btnRemoverAlunoActionPerformed
+    }//GEN-LAST:event_btnUpdateMemberActionPerformed
 
-    private void lbNovoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbNovoAlunoActionPerformed
-        MemberRegistrationView memberRegistrationView = new MemberRegistrationView();
-        memberRegistrationView.setTitle("Adicionar aluno");
-        memberRegistrationView.setVisible(true);
+    private void btnDeleteMemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteMemberActionPerformed
         
-        this.dispose();
-    }//GEN-LAST:event_lbNovoAlunoActionPerformed
+    }//GEN-LAST:event_btnDeleteMemberActionPerformed
 
-    private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-        memberListController.fillMembersTable(tbAlunos, txtPesquisar.getText());
-    }//GEN-LAST:event_btnPesquisarActionPerformed
+    private void btnAddMemberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddMemberActionPerformed
+     
+    }//GEN-LAST:event_btnAddMemberActionPerformed
+
+    private void btnSearchByNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchByNameActionPerformed
+        
+    }//GEN-LAST:event_btnSearchByNameActionPerformed
 
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
-        memberListController.fillMembersTable(tbAlunos, "");
+       
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**
@@ -276,16 +256,16 @@ public class MemberList extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnPesquisar;
-    private javax.swing.JButton btnRemoverAluno;
-    private javax.swing.JButton btnVoltar;
-    private javax.swing.JButton lbEditarAluno;
-    private javax.swing.JLabel lbImagem;
-    private javax.swing.JButton lbNovoAluno;
-    private javax.swing.JLabel lbPesquisarNome;
-    private javax.swing.JButton lbVisualizarAluno;
-    private javax.swing.JScrollPane scAlunos;
+    private javax.swing.JButton btnAddMember;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnDeleteMember;
+    private javax.swing.JButton btnSearchByName;
+    private javax.swing.JButton btnUpdateMember;
+    private javax.swing.JButton btnVisualizeMember;
+    private javax.swing.JLabel lbLogo;
+    private javax.swing.JLabel lbSearchByName;
+    private javax.swing.JScrollPane scrollMembers;
     private javax.swing.JTable tbAlunos;
-    private javax.swing.JTextField txtPesquisar;
+    private javax.swing.JTextField txtSearchByName;
     // End of variables declaration//GEN-END:variables
 }
