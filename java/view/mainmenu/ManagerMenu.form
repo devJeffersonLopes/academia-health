@@ -28,13 +28,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnMembersList" alignment="0" pref="395" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                  <Component id="lbMembersList" min="-2" pref="355" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="btnMembersList" alignment="0" min="-2" pref="395" max="-2" attributes="0"/>
                           <Component id="btnPayInstallments" alignment="0" min="-2" pref="395" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -42,9 +36,18 @@
                       <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
                       <Component id="lbMembersList2" min="-2" pref="355" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                      <Component id="lbMembersList" min="-2" pref="355" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                      <Component id="lbMembersList3" min="-2" pref="369" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btnPlanSubscription" alignment="1" pref="398" max="32767" attributes="0"/>
@@ -56,14 +59,7 @@
                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnDocumentsInspection" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="17" max="-2" attributes="0"/>
-                              <Component id="lbMembersList3" min="-2" pref="369" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="btnDocumentsInspection" min="-2" pref="398" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -78,7 +74,7 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="447" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="505" max="-2" attributes="0"/>
                       <Component id="lbTitle" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -91,38 +87,37 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Component id="lbImagem" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
               <Component id="lbTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btnPlanSubscription" max="32767" attributes="0"/>
+                  <Component id="btnMembersList" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="btnMembersList" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbMembersList" min="-2" pref="94" max="-2" attributes="0"/>
-                      <EmptySpace pref="94" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="btnPayInstallments" min="-2" pref="61" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="lbMembersList2" min="-2" pref="94" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="btnDocumentsInspection" min="-2" pref="61" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="lbMembersList3" min="-2" pref="110" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                      <Component id="btnVoltar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="btnPlanSubscription" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="lbPlanSubscription" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="106" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="lbMembersList" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnPayInstallments" min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lbMembersList2" min="-2" pref="94" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                      <Component id="btnVoltar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnDocumentsInspection" min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lbMembersList3" min="-2" pref="136" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -152,9 +147,9 @@
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/debit-card.png"/>
+          <Image iconType="3" name="/imgs/employees.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Pagamento de parcelas"/>
+        <Property name="text" type="java.lang.String" value="Lista de funcion&#xe1;rios"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPayInstallmentsActionPerformed"/>
@@ -166,9 +161,9 @@
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imgs/agreement.png"/>
+          <Image iconType="3" name="/imgs/calendar.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Aferi&#xe7;&#xe3;o de documentos"/>
+        <Property name="text" type="java.lang.String" value="Especifica&#xe7;&#xf5;es dos planos"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDocumentsInspectionActionPerformed"/>
@@ -180,9 +175,9 @@
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/registration.png"/>
+          <Image iconType="3" name="/imgs/monetary.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Registro dos alunos"/>
+        <Property name="text" type="java.lang.String" value="Balan&#xe7;o geral"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
@@ -195,9 +190,9 @@
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imgs/calendar.png"/>
+          <Image iconType="3" name="/imgs/agreement.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Assinatura de Planos"/>
+        <Property name="text" type="java.lang.String" value="Aferi&#xe7;&#xe3;o de documentos"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
@@ -207,7 +202,7 @@
           <Font name="Cambria" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="&quot;&lt;html&gt;Este menu cont&#xe9;m o registro de todos os alunos da academia.&lt;br&gt; Aqui voc&#xea; pode pesquisar, visualizar, excluir, alterar dados e matricular novos alunos.&lt;/html&gt;&quot;" type="code"/>
+          <Connection code="&quot;&lt;html&gt;Este menu cont&#xe9;m todas as movimenta&#xe7;&#xf5;es financeiras da academia. Voc&#xea; pode visualizar as receitas e gerenciar novas despesas neste menu.&lt;br&gt;Por aqui voc&#xea; pode acessar os resultados do caixa de determinado per&#xed;odo e emitir relat&#xf3;rios financeiros que ser&#xe3;o &#xfa;teis para controle do neg&#xf3;cio.&lt;/html&gt;&quot;" type="code"/>
         </Property>
       </Properties>
     </Component>
@@ -217,7 +212,7 @@
           <Font name="Cambria" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="&quot;&lt;html&gt;Nesse menu voc&#xea; pode assinar um plano de pagamento para um aluno, emitindo um contrato e gerando as parcelas a serem pagas.&lt;/html&gt;&quot;" type="code"/>
+          <Connection code="&quot;&lt;html&gt;Este menu d&#xe1; acesso a todos os documentos registrados pela academia, tanto de funcion&#xe1;rios como de alunos.&lt;/html&gt;&quot;" type="code"/>
         </Property>
       </Properties>
     </Component>
@@ -227,7 +222,7 @@
           <Font name="Cambria" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="&quot;&lt;html&gt;Neste menu voc&#xea; pode visualizar todo o hist&#xf3;rico de pagamentos recebidos ou pendentes e quitar parcelas que ainda n&#xe3;o foram pagas pelos alunos.&lt;/html&gt;&quot;" type="code"/>
+          <Connection code="&quot;&lt;html&gt;Esta &#xe9; uma lista completa dos funcion&#xe1;rios da academia. Por aqui voc&#xea; pode visualizar, editar, excluir e adicionar funcion&#xe1;rios contratados.&lt;/html&gt;&quot;" type="code"/>
         </Property>
       </Properties>
     </Component>
@@ -237,7 +232,7 @@
           <Font name="Cambria" size="18" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="&quot;&lt;html&gt;Por meio deste menu, voc&#xea; pode visualizar todos os documentos associados a um aluno e imprimir.&lt;br&gt; Aqui est&#xe3;o inclusos contratos de v&#xed;nculo, contratos de assinatura de planos e recibos.&lt;/html&gt;&quot;" type="code"/>
+          <Connection code="&quot;&lt;html&gt;Este &#xe9; o menu que cont&#xe9;m todos os dados relacionados aos planos de pagamento.&lt;br&gt;Voc&#xea; pode usar este menu para adicionar/remover planos e tamb&#xe9;m para editar informa&#xe7;&#xf5;es, como o valor integral, nome, etc.&lt;/html&gt;&quot;" type="code"/>
         </Property>
       </Properties>
     </Component>
@@ -246,7 +241,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Cambria" size="30" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Recepcionista"/>
+        <Property name="text" type="java.lang.String" value="Gestor"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -47,8 +47,8 @@ public class ManagerMenu extends javax.swing.JFrame {
         btnVoltar.setText("Voltar");
 
         btnPayInstallments.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnPayInstallments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/debit-card.png"))); // NOI18N
-        btnPayInstallments.setText("Pagamento de parcelas");
+        btnPayInstallments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/employees.png"))); // NOI18N
+        btnPayInstallments.setText("Lista de funcionários");
         btnPayInstallments.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPayInstallmentsActionPerformed(evt);
@@ -56,8 +56,8 @@ public class ManagerMenu extends javax.swing.JFrame {
         });
 
         btnDocumentsInspection.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnDocumentsInspection.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/agreement.png"))); // NOI18N
-        btnDocumentsInspection.setText("Aferição de documentos");
+        btnDocumentsInspection.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/calendar.png"))); // NOI18N
+        btnDocumentsInspection.setText("Especificações dos planos");
         btnDocumentsInspection.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDocumentsInspectionActionPerformed(evt);
@@ -65,8 +65,8 @@ public class ManagerMenu extends javax.swing.JFrame {
         });
 
         btnMembersList.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnMembersList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/registration.png"))); // NOI18N
-        btnMembersList.setText("Registro dos alunos");
+        btnMembersList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/monetary.png"))); // NOI18N
+        btnMembersList.setText("Balanço geral");
         btnMembersList.setToolTipText("");
         btnMembersList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,24 +75,24 @@ public class ManagerMenu extends javax.swing.JFrame {
         });
 
         btnPlanSubscription.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnPlanSubscription.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/calendar.png"))); // NOI18N
-        btnPlanSubscription.setText("Assinatura de Planos");
+        btnPlanSubscription.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/agreement.png"))); // NOI18N
+        btnPlanSubscription.setText("Aferição de documentos");
         btnPlanSubscription.setToolTipText("");
 
         lbMembersList.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        lbMembersList.setText("<html>Este menu contém o registro de todos os alunos da academia.<br> Aqui você pode pesquisar, visualizar, excluir, alterar dados e matricular novos alunos.</html>");
+        lbMembersList.setText("<html>Este menu contém todas as movimentações financeiras da academia. Você pode visualizar as receitas e gerenciar novas despesas neste menu.<br>Por aqui você pode acessar os resultados do caixa de determinado período e emitir relatórios financeiros que serão úteis para controle do negócio.</html>");
 
         lbPlanSubscription.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        lbPlanSubscription.setText("<html>Nesse menu você pode assinar um plano de pagamento para um aluno, emitindo um contrato e gerando as parcelas a serem pagas.</html>");
+        lbPlanSubscription.setText("<html>Este menu dá acesso a todos os documentos registrados pela academia, tanto de funcionários como de alunos.</html>");
 
         lbMembersList2.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        lbMembersList2.setText("<html>Neste menu você pode visualizar todo o histórico de pagamentos recebidos ou pendentes e quitar parcelas que ainda não foram pagas pelos alunos.</html>");
+        lbMembersList2.setText("<html>Esta é uma lista completa dos funcionários da academia. Por aqui você pode visualizar, editar, excluir e adicionar funcionários contratados.</html>");
 
         lbMembersList3.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        lbMembersList3.setText("<html>Por meio deste menu, você pode visualizar todos os documentos associados a um aluno e imprimir.<br> Aqui estão inclusos contratos de vínculo, contratos de assinatura de planos e recibos.</html>");
+        lbMembersList3.setText("<html>Este é o menu que contém todos os dados relacionados aos planos de pagamento.<br>Você pode usar este menu para adicionar/remover planos e também para editar informações, como o valor integral, nome, etc.</html>");
 
         lbTitle.setFont(new java.awt.Font("Cambria", 1, 30)); // NOI18N
-        lbTitle.setText("Recepcionista");
+        lbTitle.setText("Gestor");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,17 +103,20 @@ public class ManagerMenu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnMembersList, javax.swing.GroupLayout.DEFAULT_SIZE, 395, Short.MAX_VALUE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(14, 14, 14)
-                                    .addComponent(lbMembersList, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnMembersList, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnPayInstallments, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(106, 106, 106)
-                        .addComponent(lbMembersList2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lbMembersList2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addComponent(lbMembersList, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(127, 127, 127)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(lbMembersList3, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnPlanSubscription, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
@@ -122,12 +125,7 @@ public class ManagerMenu extends javax.swing.JFrame {
                                 .addGap(26, 26, 26)))
                         .addGap(111, 111, 111))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnDocumentsInspection, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lbMembersList3, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)))
+                        .addComponent(btnDocumentsInspection, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,7 +135,7 @@ public class ManagerMenu extends javax.swing.JFrame {
                             .addComponent(btnVoltar)
                             .addComponent(lbImagem)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(447, 447, 447)
+                        .addGap(505, 505, 505)
                         .addComponent(lbTitle)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -146,32 +144,31 @@ public class ManagerMenu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(lbImagem)
-                .addGap(16, 16, 16)
+                .addGap(3, 3, 3)
                 .addComponent(lbTitle)
-                .addGap(55, 55, 55)
+                .addGap(68, 68, 68)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnPlanSubscription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnMembersList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnMembersList)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbMembersList, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnPayInstallments, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lbMembersList2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnDocumentsInspection, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lbMembersList3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(83, 83, 83)
-                        .addComponent(btnVoltar)
-                        .addGap(15, 15, 15))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnPlanSubscription)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lbPlanSubscription, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 106, Short.MAX_VALUE))
+                    .addComponent(lbMembersList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnPayInstallments, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lbMembersList2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(99, 99, 99)
+                        .addComponent(btnVoltar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnDocumentsInspection, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lbMembersList3, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(15, 15, 15))
         );
 
         pack();
