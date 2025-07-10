@@ -4,31 +4,16 @@
  */
 package view.membercrud;
 
-import model.Enrollment;
-import model.Member;
-import model.MemberWithEnrollmentDTO;
-import model.PaymentPlan;
-
 /**
  *
  * @author Jefferson
  */
 public class VisualizeMember extends javax.swing.JDialog {
-
-    private Member member;
-    private Enrollment enrollment;
-    private PaymentPlan paymentPlan;
     
     /**
      * Creates new form VisualizarAluno
      */
-    public VisualizeMember(Member member, Enrollment enrollment, PaymentPlan paymentPlan) {
-        super(new javax.swing.JFrame(), true);
-        
-        this.member = member;
-        this.enrollment = enrollment;
-        this.paymentPlan = paymentPlan;
-        
+    public VisualizeMember() {
         initComponents();
     }
 
@@ -62,6 +47,7 @@ public class VisualizeMember extends javax.swing.JDialog {
         lbRegistrationDate = new javax.swing.JLabel();
         lbPaymentPlanIcon = new javax.swing.JLabel();
         lbPaymentPlan = new javax.swing.JLabel();
+        btnBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -122,15 +108,16 @@ public class VisualizeMember extends javax.swing.JDialog {
 
         lbPaymentPlan.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 22)); // NOI18N
 
+        btnBack.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back.png"))); // NOI18N
+        btnBack.setText("Voltar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(lbLogo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -155,7 +142,12 @@ public class VisualizeMember extends javax.swing.JDialog {
                             .addComponent(lbWhatsapp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lbRegistrationDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lbBirthDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbPaymentPlan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(lbPaymentPlan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnBack)
+                            .addComponent(lbLogo))))
                 .addContainerGap(113, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -203,23 +195,16 @@ public class VisualizeMember extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbPaymentPlanIcon)
                     .addComponent(lbPaymentPlan, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addComponent(btnBack)
+                .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        lbFullName.setText(member.getFull_name());
-        lbEnrollment.setText(String.valueOf(enrollment.getId()));
-        lbEmail.setText(member.getEmail());
-        lbCPF.setText(member.getCpf());
-        lbRG.setText(member.getRg());
-        lbPhone.setText(member.getPhone());
-        lbWhatsapp.setText(member.getWhatsapp());
-        lbRegistrationDate.setText(String.valueOf(enrollment.getRegistration_date()));
-        lbBirthDate.setText(String.valueOf(member.getBirth_date()));
-        lbPaymentPlan.setText(paymentPlan.getType());
+        
     }//GEN-LAST:event_formWindowOpened
 
     /**
@@ -228,6 +213,7 @@ public class VisualizeMember extends javax.swing.JDialog {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
     private javax.swing.JLabel lbBirthDate;
     private javax.swing.JLabel lbBirthDateIcon;
     private javax.swing.JLabel lbCPF;
