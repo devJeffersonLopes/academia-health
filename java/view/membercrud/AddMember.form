@@ -27,21 +27,21 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="227" max="-2" attributes="0"/>
-                      <Component id="lbTelefone" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbPhone" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtTelefone" min="-2" pref="336" max="-2" attributes="0"/>
+                      <Component id="txtPhone" min="-2" pref="336" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="lbEmail" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbNome" min="-2" max="-2" attributes="0"/>
                           <Component id="lbCpf" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="lbRg" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbFullName" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtNome" min="-2" pref="336" max="-2" attributes="0"/>
+                          <Component id="txtFullName" min="-2" pref="336" max="-2" attributes="0"/>
                           <Component id="txtEmail" min="-2" pref="336" max="-2" attributes="0"/>
                           <Component id="txtCpf" min="-2" pref="336" max="-2" attributes="0"/>
                           <Component id="txtRg" alignment="0" min="-2" pref="336" max="-2" attributes="0"/>
@@ -56,24 +56,24 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="lbPlano" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbDataNascimento" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbPaymentPlan" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbBirthDate" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtDataNascimento" min="-2" pref="336" max="-2" attributes="0"/>
-                          <Component id="cbPlano" min="-2" pref="262" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtBirthDate" pref="336" max="32767" attributes="0"/>
+                          <Component id="boxPaymentPlan" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="btnVoltar" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="457" max="32767" attributes="0"/>
-                              <Component id="btnConfirmar" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnConfirm" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="lbImagem" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbLogo" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -85,11 +85,11 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
-              <Component id="lbImagem" min="-2" max="-2" attributes="0"/>
+              <Component id="lbLogo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNome" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="lbFullName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFullName" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -108,8 +108,8 @@
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtTelefone" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="lbTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPhone" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="lbPhone" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -118,18 +118,18 @@
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtDataNascimento" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="lbDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtBirthDate" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="lbBirthDate" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbPlano" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbPlano" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="lbPaymentPlan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="boxPaymentPlan" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="85" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnVoltar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnConfirm" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
           </Group>
@@ -137,14 +137,14 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lbImagem">
+    <Component class="javax.swing.JLabel" name="lbLogo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/logoPequena.png"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnVoltar">
+    <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
@@ -155,17 +155,17 @@
         <Property name="text" type="java.lang.String" value="Voltar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbNome">
+    <Component class="javax.swing.JLabel" name="lbFullName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Nome:"/>
+        <Property name="text" type="java.lang.String" value="Nome completo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtNome">
+    <Component class="javax.swing.JTextField" name="txtFullName">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNomeActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFullNameActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbEmail">
@@ -207,7 +207,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRgActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbTelefone">
+    <Component class="javax.swing.JLabel" name="lbPhone">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
@@ -215,9 +215,9 @@
         <Property name="text" type="java.lang.String" value="Telefone:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtTelefone">
+    <Component class="javax.swing.JTextField" name="txtPhone">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTelefoneActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPhoneActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbWhatsapp">
@@ -233,7 +233,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtWhatsappActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbPlano">
+    <Component class="javax.swing.JLabel" name="lbPaymentPlan">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
@@ -241,12 +241,12 @@
         <Property name="text" type="java.lang.String" value="Plano:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDataNascimento">
+    <Component class="javax.swing.JTextField" name="txtBirthDate">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDataNascimentoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBirthDateActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnConfirmar">
+    <Component class="javax.swing.JButton" name="btnConfirm">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="20" style="0"/>
@@ -257,7 +257,7 @@
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbDataNascimento">
+    <Component class="javax.swing.JLabel" name="lbBirthDate">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
@@ -265,15 +265,10 @@
         <Property name="text" type="java.lang.String" value="Data de nascimento:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbPlano">
+    <Component class="javax.swing.JComboBox" name="boxPaymentPlan">
       <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;()" type="code"/>
         </Property>
       </Properties>
       <AuxValues>

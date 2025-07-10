@@ -26,40 +26,40 @@ public class AddMember extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbImagem = new javax.swing.JLabel();
-        btnVoltar = new javax.swing.JButton();
-        lbNome = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
+        lbLogo = new javax.swing.JLabel();
+        btnBack = new javax.swing.JButton();
+        lbFullName = new javax.swing.JLabel();
+        txtFullName = new javax.swing.JTextField();
         lbEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         lbCpf = new javax.swing.JLabel();
         txtCpf = new javax.swing.JTextField();
         lbRg = new javax.swing.JLabel();
         txtRg = new javax.swing.JTextField();
-        lbTelefone = new javax.swing.JLabel();
-        txtTelefone = new javax.swing.JTextField();
+        lbPhone = new javax.swing.JLabel();
+        txtPhone = new javax.swing.JTextField();
         lbWhatsapp = new javax.swing.JLabel();
         txtWhatsapp = new javax.swing.JTextField();
-        lbPlano = new javax.swing.JLabel();
-        txtDataNascimento = new javax.swing.JTextField();
-        btnConfirmar = new javax.swing.JButton();
-        lbDataNascimento = new javax.swing.JLabel();
-        cbPlano = new javax.swing.JComboBox<>();
+        lbPaymentPlan = new javax.swing.JLabel();
+        txtBirthDate = new javax.swing.JTextField();
+        btnConfirm = new javax.swing.JButton();
+        lbBirthDate = new javax.swing.JLabel();
+        boxPaymentPlan = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbImagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logoPequena.png"))); // NOI18N
+        lbLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logoPequena.png"))); // NOI18N
 
-        btnVoltar.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back.png"))); // NOI18N
-        btnVoltar.setText("Voltar");
+        btnBack.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back.png"))); // NOI18N
+        btnBack.setText("Voltar");
 
-        lbNome.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbNome.setText("Nome:");
+        lbFullName.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbFullName.setText("Nome completo:");
 
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
+        txtFullName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
+                txtFullNameActionPerformed(evt);
             }
         });
 
@@ -90,12 +90,12 @@ public class AddMember extends javax.swing.JFrame {
             }
         });
 
-        lbTelefone.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbTelefone.setText("Telefone:");
+        lbPhone.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbPhone.setText("Telefone:");
 
-        txtTelefone.addActionListener(new java.awt.event.ActionListener() {
+        txtPhone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTelefoneActionPerformed(evt);
+                txtPhoneActionPerformed(evt);
             }
         });
 
@@ -108,23 +108,23 @@ public class AddMember extends javax.swing.JFrame {
             }
         });
 
-        lbPlano.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbPlano.setText("Plano:");
+        lbPaymentPlan.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbPaymentPlan.setText("Plano:");
 
-        txtDataNascimento.addActionListener(new java.awt.event.ActionListener() {
+        txtBirthDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDataNascimentoActionPerformed(evt);
+                txtBirthDateActionPerformed(evt);
             }
         });
 
-        btnConfirmar.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
-        btnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/confirm.png"))); // NOI18N
-        btnConfirmar.setText("Confirmar");
+        btnConfirm.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 20)); // NOI18N
+        btnConfirm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/confirm.png"))); // NOI18N
+        btnConfirm.setText("Confirmar");
 
-        lbDataNascimento.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbDataNascimento.setText("Data de nascimento:");
+        lbBirthDate.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbBirthDate.setText("Data de nascimento:");
 
-        cbPlano.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        boxPaymentPlan.setModel(new javax.swing.DefaultComboBoxModel<>());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -134,19 +134,19 @@ public class AddMember extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(227, 227, 227)
-                        .addComponent(lbTelefone)
+                        .addComponent(lbPhone)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(259, 259, 259)
+                        .addGap(143, 143, 143)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lbEmail)
-                            .addComponent(lbNome)
                             .addComponent(lbCpf)
-                            .addComponent(lbRg))
+                            .addComponent(lbRg)
+                            .addComponent(lbFullName))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtRg, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -158,31 +158,31 @@ public class AddMember extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbPlano)
-                            .addComponent(lbDataNascimento))
+                            .addComponent(lbPaymentPlan)
+                            .addComponent(lbBirthDate))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cbPlano, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtBirthDate, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
+                            .addComponent(boxPaymentPlan, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnVoltar)
+                                .addComponent(btnBack)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 457, Short.MAX_VALUE)
-                                .addComponent(btnConfirmar))
-                            .addComponent(lbImagem))))
+                                .addComponent(btnConfirm))
+                            .addComponent(lbLogo))))
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(lbImagem)
+                .addComponent(lbLogo)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbNome)
-                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbFullName)
+                    .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbEmail)
@@ -197,33 +197,33 @@ public class AddMember extends javax.swing.JFrame {
                     .addComponent(lbRg))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbTelefone))
+                    .addComponent(txtPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbPhone))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtWhatsapp, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbWhatsapp))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbDataNascimento))
+                    .addComponent(txtBirthDate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbBirthDate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbPlano)
-                    .addComponent(cbPlano, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbPaymentPlan)
+                    .addComponent(boxPaymentPlan, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVoltar)
-                    .addComponent(btnConfirmar))
+                    .addComponent(btnBack)
+                    .addComponent(btnConfirm))
                 .addGap(29, 29, 29))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+    private void txtFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFullNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
+    }//GEN-LAST:event_txtFullNameActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
         // TODO add your handling code here:
@@ -237,17 +237,17 @@ public class AddMember extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRgActionPerformed
 
-    private void txtTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefoneActionPerformed
+    private void txtPhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhoneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelefoneActionPerformed
+    }//GEN-LAST:event_txtPhoneActionPerformed
 
     private void txtWhatsappActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtWhatsappActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtWhatsappActionPerformed
 
-    private void txtDataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDataNascimentoActionPerformed
+    private void txtBirthDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBirthDateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDataNascimentoActionPerformed
+    }//GEN-LAST:event_txtBirthDateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,24 +286,24 @@ public class AddMember extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConfirmar;
-    private javax.swing.JButton btnVoltar;
-    private javax.swing.JComboBox<String> cbPlano;
+    private javax.swing.JComboBox<String> boxPaymentPlan;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnConfirm;
+    private javax.swing.JLabel lbBirthDate;
     private javax.swing.JLabel lbCpf;
-    private javax.swing.JLabel lbDataNascimento;
     private javax.swing.JLabel lbEmail;
-    private javax.swing.JLabel lbImagem;
-    private javax.swing.JLabel lbNome;
-    private javax.swing.JLabel lbPlano;
+    private javax.swing.JLabel lbFullName;
+    private javax.swing.JLabel lbLogo;
+    private javax.swing.JLabel lbPaymentPlan;
+    private javax.swing.JLabel lbPhone;
     private javax.swing.JLabel lbRg;
-    private javax.swing.JLabel lbTelefone;
     private javax.swing.JLabel lbWhatsapp;
+    private javax.swing.JTextField txtBirthDate;
     private javax.swing.JTextField txtCpf;
-    private javax.swing.JTextField txtDataNascimento;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtNome;
+    private javax.swing.JTextField txtFullName;
+    private javax.swing.JTextField txtPhone;
     private javax.swing.JTextField txtRg;
-    private javax.swing.JTextField txtTelefone;
     private javax.swing.JTextField txtWhatsapp;
     // End of variables declaration//GEN-END:variables
 }
