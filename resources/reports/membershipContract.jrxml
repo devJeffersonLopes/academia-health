@@ -1,0 +1,42 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="contratoVinculo" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3fd31980-259d-4a2d-bddf-e536333ecea6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="memberFullName" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="170bd75c-f1ee-4d79-8a8b-0776615901f5" x="-20" y="27" width="595" height="43" fontSize="26.0" hTextAlign="Center">
+			<text><![CDATA[Contrato de vínculo]]></text>
+		</element>
+	</title>
+	<detail>
+		<band height="505" splitType="Stretch">
+			<element kind="textField" uuid="d51800f1-83fe-417b-bf86-c35d9baf49d4" x="0" y="25" width="562" height="480" markup="styled" fontName="SansSerif" fontSize="13.0">
+				<paragraph lineSpacing="1_1_2"/>
+				<expression><![CDATA["<b>CONTRATO DE PRESTAÇÃO DE SERVIÇOS - HEALTH ACADEMIA </b>\n"+
+"<b>IDENTIFICAÇÃO DAS PARTES:</b> Este contrato é firmado entre a Health Academia, pessoa jurídica de direito privado, e o aluno, identificado como " +$P{memberFullName}+", doravante denominado simplesmente Aluno.\n"+
+"<b>CLÁUSULAS E CONDIÇÕES</b>\n"+
+"<b>1. OBJETO:</b> A Health Academia compromete-se a fornecer ao Aluno acesso às suas instalações e serviços.\n"+
+"<b>2. VIGÊNCIA:</b> Este contrato é válido por prazo indeterminado, podendo ser encerrado conforme a cláusula 4.\n"+
+"<b>3. CANCELAMENTO:</b>\n"+
+"     3.1. O Aluno pode cancelar este contrato mediante aviso prévio de 30 (trinta) dias.\n"+
+"     3.2. A academia pode rescindir o contrato em caso de inadimplência ou descumprimento das normas internas\n"+
+"<b>4. DISPOSIÇÕES GERAIS:</b>\n"+
+"     4.1. Este contrato é pessoal e intransferível.\n"+
+"     4.2. A academia não se responsabiliza por objetos deixados em suas dependências.\n"+
+"<b>5. FORO:</b> Fica eleito o foro da comarca de Curitiba para resolver quaisquer disputas decorrentes deste contrato.\n"+
+"E por estarem de acordo, assinam o presente."]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="50">
+		<element kind="staticText" uuid="100b6b3a-e673-48ab-9ba4-70507df0eaa2" x="40" y="20" width="150" height="30" fontSize="15.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Health Academia]]></text>
+		</element>
+		<element kind="line" uuid="1c4c7a9d-bed1-49da-83c1-ac1f3670f659" x="10" y="19" width="220" height="1"/>
+		<element kind="staticText" uuid="be2b8c30-3415-4a74-8236-ef49ec3b85fc" x="370" y="20" width="150" height="30" fontSize="15.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Aluno]]></text>
+		</element>
+		<element kind="line" uuid="833c7507-354c-4045-b484-95fba0f6967c" x="335" y="19" width="220" height="1"/>
+	</columnFooter>
+</jasperReport>

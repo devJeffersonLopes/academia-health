@@ -1,0 +1,51 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="reciboMatricula" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="224d219b-d59b-4597-85b5-3231c39fe31c">
+	<parameter name="cliente" class="java.lang.String"/>
+	<parameter name="valorPagamento" class="java.lang.String"/>
+	<parameter name="dataEmissao" class="java.lang.String"/>
+	<parameter name="operador" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="bed468bc-6767-49f1-a3ee-2a062c43aff8" x="-20" y="24" width="595" height="36" fontSize="26.0" hTextAlign="Center">
+			<text><![CDATA[Recibo]]></text>
+		</element>
+	</title>
+	<detail>
+		<band height="481" splitType="Stretch">
+			<element kind="rectangle" uuid="3b4ed89c-2ab0-471c-b17c-ae448a99b513" x="60" y="30" width="440" height="260" backcolor="rgba(255, 255, 255, 0.0)"/>
+			<element kind="staticText" uuid="90c15095-3b34-4659-9322-cc0d62d26049" x="70" y="50" width="80" height="30" fontSize="20.0" bold="true">
+				<text><![CDATA[Cliente:]]></text>
+			</element>
+			<element kind="staticText" uuid="a32d0f0d-01ba-48a1-98bc-e4014130142e" x="70" y="90" width="199" height="30" fontSize="20.0" bold="true">
+				<text><![CDATA[Valor do pagamento:]]></text>
+			</element>
+			<element kind="staticText" uuid="ca954c25-d593-4d2e-8be9-319e46890202" x="70" y="130" width="170" height="30" fontSize="20.0" bold="true">
+				<text><![CDATA[Data de emissão:]]></text>
+			</element>
+			<element kind="staticText" uuid="410124d9-2c75-4229-a5cf-94d51a09c957" x="70" y="170" width="100" height="30" fontSize="20.0" bold="true">
+				<text><![CDATA[Operador:]]></text>
+			</element>
+			<element kind="staticText" uuid="efe8e3fd-a169-42fb-bea3-9da2f19bf607" x="70" y="210" width="110" height="30" fontSize="20.0" bold="true">
+				<text><![CDATA[Descrição:]]></text>
+			</element>
+			<element kind="textField" uuid="74825c8b-16d5-4584-8904-977efd3c9089" x="150" y="50" width="330" height="30" fontSize="21.0">
+				<expression><![CDATA[$P{cliente}]]></expression>
+			</element>
+			<element kind="textField" uuid="9f86ab42-81eb-4a29-9452-52c933a5966a" x="269" y="90" width="210" height="30" fontSize="21.0">
+				<expression><![CDATA[$P{valorPagamento}]]></expression>
+			</element>
+			<element kind="textField" uuid="f18ab291-d188-4a00-85f7-7942c58a4da1" x="240" y="130" width="240" height="30" fontSize="21.0">
+				<expression><![CDATA[$P{dataEmissao}]]></expression>
+			</element>
+			<element kind="textField" uuid="44f50b74-5156-4d0d-9d7d-1282c6ea2516" x="170" y="170" width="310" height="30" fontSize="21.0">
+				<expression><![CDATA[$P{operador}]]></expression>
+			</element>
+			<element kind="textField" uuid="905ea15a-a3a4-439b-81bf-291adcb31b8c" x="180" y="210" width="310" height="70" fontSize="21.0">
+				<expression><![CDATA["Valor referente à taxa de matrícula"]]></expression>
+			</element>
+			<element kind="textField" uuid="e2a304ee-becf-4914-851c-072102d38d3b" x="60" y="360" width="449" height="121" markup="styled" fontSize="19.0">
+				<expression><![CDATA["A <b>Academia Health LTDA</b>, de CNPJ <b>12.345.678/0001-90</b> atesta o recebimento do valor de <b>R$"+ $P{valorPagamento}+" </b>pago por <b>"+$P{cliente}+"</b> no dia <b>"+$P{dataEmissao}+"</b>."]]></expression>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
