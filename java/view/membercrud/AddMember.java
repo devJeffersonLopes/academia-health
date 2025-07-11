@@ -32,10 +32,10 @@ public class AddMember extends javax.swing.JFrame {
         txtFullName = new javax.swing.JTextField();
         lbEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
-        lbCpf = new javax.swing.JLabel();
-        txtCpf = new javax.swing.JTextField();
-        lbRg = new javax.swing.JLabel();
-        txtRg = new javax.swing.JTextField();
+        lbCPF = new javax.swing.JLabel();
+        txtCPF = new javax.swing.JTextField();
+        lbRG = new javax.swing.JLabel();
+        txtRG = new javax.swing.JTextField();
         lbPhone = new javax.swing.JLabel();
         txtPhone = new javax.swing.JTextField();
         lbWhatsapp = new javax.swing.JLabel();
@@ -72,21 +72,21 @@ public class AddMember extends javax.swing.JFrame {
             }
         });
 
-        lbCpf.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbCpf.setText("CPF:");
+        lbCPF.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbCPF.setText("CPF:");
 
-        txtCpf.addActionListener(new java.awt.event.ActionListener() {
+        txtCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCpfActionPerformed(evt);
+                txtCPFActionPerformed(evt);
             }
         });
 
-        lbRg.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbRg.setText("RG:");
+        lbRG.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
+        lbRG.setText("RG:");
 
-        txtRg.addActionListener(new java.awt.event.ActionListener() {
+        txtRG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRgActionPerformed(evt);
+                txtRGActionPerformed(evt);
             }
         });
 
@@ -141,15 +141,15 @@ public class AddMember extends javax.swing.JFrame {
                         .addGap(143, 143, 143)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lbEmail)
-                            .addComponent(lbCpf)
-                            .addComponent(lbRg)
+                            .addComponent(lbCPF)
+                            .addComponent(lbRG)
                             .addComponent(lbFullName))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtRg, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(214, 214, 214)
                         .addComponent(lbWhatsapp)
@@ -189,12 +189,12 @@ public class AddMember extends javax.swing.JFrame {
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbCpf)
-                    .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbCPF)
+                    .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRg, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbRg))
+                    .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbRG))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -229,13 +229,13 @@ public class AddMember extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
-    private void txtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCpfActionPerformed
+    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCpfActionPerformed
+    }//GEN-LAST:event_txtCPFActionPerformed
 
-    private void txtRgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRgActionPerformed
+    private void txtRGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRGActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRgActionPerformed
+    }//GEN-LAST:event_txtRGActionPerformed
 
     private void txtPhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhoneActionPerformed
         // TODO add your handling code here:
@@ -290,20 +290,20 @@ public class AddMember extends javax.swing.JFrame {
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnConfirm;
     private javax.swing.JLabel lbBirthDate;
-    private javax.swing.JLabel lbCpf;
+    private javax.swing.JLabel lbCPF;
     private javax.swing.JLabel lbEmail;
     private javax.swing.JLabel lbFullName;
     private javax.swing.JLabel lbLogo;
     private javax.swing.JLabel lbPaymentPlan;
     private javax.swing.JLabel lbPhone;
-    private javax.swing.JLabel lbRg;
+    private javax.swing.JLabel lbRG;
     private javax.swing.JLabel lbWhatsapp;
     private javax.swing.JTextField txtBirthDate;
-    private javax.swing.JTextField txtCpf;
+    private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtFullName;
     private javax.swing.JTextField txtPhone;
-    private javax.swing.JTextField txtRg;
+    private javax.swing.JTextField txtRG;
     private javax.swing.JTextField txtWhatsapp;
     // End of variables declaration//GEN-END:variables
 }

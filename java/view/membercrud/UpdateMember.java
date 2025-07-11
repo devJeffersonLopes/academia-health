@@ -4,32 +4,16 @@
  */
 package view.membercrud;
 
-import view.membercrud.MemberList;
-import java.time.LocalDate;
-import javax.swing.JOptionPane;
-import model.Enrollment;
-import model.Member;
-import service.EnrollmentService;
-import service.MemberService;
-
 /**
  *
  * @author Jefferson
  */
 public class UpdateMember extends javax.swing.JDialog {
-    
-    private Member member;
-    private Enrollment enrollment;
-    
+        
     /**
      * Creates new form VisualizarAluno
      */
-    public UpdateMember(Member member, Enrollment enrollment) {
-        super(new javax.swing.JFrame(), true);
-        
-        this.member = member;
-        this.enrollment = enrollment;
-        
+    public UpdateMember() {
         initComponents();
     }
 
@@ -84,7 +68,7 @@ public class UpdateMember extends javax.swing.JDialog {
         lbBirthDate.setText("Data de nascimento:");
 
         lbFullName.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
-        lbFullName.setText("Nome:");
+        lbFullName.setText("Nome completo:");
 
         lbEnrollment.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 24)); // NOI18N
         lbEnrollment.setText("Matrícula:");
@@ -217,7 +201,7 @@ public class UpdateMember extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtBirthDate, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(259, 259, 259)
+                        .addGap(143, 143, 143)
                         .addComponent(lbFullName)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -317,49 +301,11 @@ public class UpdateMember extends javax.swing.JDialog {
     }//GEN-LAST:event_txtEmailActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        txtFullName.setText(member.getFull_name());
-        txtEnrollment.setText(String.valueOf(enrollment.getId()));
-        txtEmail.setText(member.getEmail());
-        txtCPF.setText(member.getCpf());
-        txtRG.setText(member.getRg());
-        txtPhone.setText(member.getPhone());
-        txtWhatsapp.setText(member.getWhatsapp());
-        txtRegistrationDate.setText(enrollment.getRegistration_date().toString());
-        txtBirthDate.setText(member.getBirth_date().toString());
+        
     }//GEN-LAST:event_formWindowOpened
 
     private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
-        int option = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja salvar as alterações?", "Confirmar operação", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        
-        if(option == 1){
-            Member updatedMember = new Member();
-            Enrollment updatedEnrollment = new Enrollment();
-            
-            MemberService memberService = new MemberService();
-            EnrollmentService enrollmentService = new EnrollmentService();
-            
-            updatedMember.setFull_name(txtFullName.getText());
-            updatedMember.setEmail(txtEmail.getText());
-            updatedMember.setCpf(txtCPF.getText());
-            updatedMember.setRg(txtRG.getText());
-            updatedMember.setPhone(txtPhone.getText());
-            updatedMember.setWhatsapp(txtWhatsapp.getText());
-            updatedMember.setBirth_date(LocalDate.parse(txtBirthDate.getText()));  
-            
-            updatedEnrollment.setId(Integer.parseInt(txtEnrollment.getText()));
-            updatedEnrollment.setRegistration_date(LocalDate.parse(txtRegistrationDate.getText()));
-            
-            memberService.update(member.getId(), updatedMember);
-            enrollmentService.update(enrollment.getId(), updatedEnrollment);
-            
-            MemberList memberList = new MemberList();
-            
-            memberList.setTitle("Lista de alunos");
-            memberList.setVisible(true);
-            
-            this.dispose();
-        }
-        
+       
     }//GEN-LAST:event_btnConfirmActionPerformed
 
     /**

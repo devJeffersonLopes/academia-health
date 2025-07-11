@@ -35,16 +35,16 @@
                       <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="lbEmail" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbCpf" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbRg" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbCPF" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbRG" min="-2" max="-2" attributes="0"/>
                           <Component id="lbFullName" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="txtFullName" min="-2" pref="336" max="-2" attributes="0"/>
                           <Component id="txtEmail" min="-2" pref="336" max="-2" attributes="0"/>
-                          <Component id="txtCpf" min="-2" pref="336" max="-2" attributes="0"/>
-                          <Component id="txtRg" alignment="0" min="-2" pref="336" max="-2" attributes="0"/>
+                          <Component id="txtCPF" min="-2" pref="336" max="-2" attributes="0"/>
+                          <Component id="txtRG" alignment="0" min="-2" pref="336" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -98,13 +98,13 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbCpf" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCpf" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="lbCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCPF" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtRg" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="lbRg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRG" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="lbRG" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -181,7 +181,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbCpf">
+    <Component class="javax.swing.JLabel" name="lbCPF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
@@ -189,12 +189,12 @@
         <Property name="text" type="java.lang.String" value="CPF:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCpf">
+    <Component class="javax.swing.JTextField" name="txtCPF">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCpfActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCPFActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbRg">
+    <Component class="javax.swing.JLabel" name="lbRG">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Sans Unicode" size="24" style="0"/>
@@ -202,9 +202,9 @@
         <Property name="text" type="java.lang.String" value="RG:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtRg">
+    <Component class="javax.swing.JTextField" name="txtRG">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRgActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRGActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbPhone">
