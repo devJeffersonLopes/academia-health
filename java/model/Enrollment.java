@@ -7,7 +7,7 @@ public class Enrollment {
     
     private int id;
     private int member_id;
-    private int payment_plan_id;
+    private Integer payment_plan_id;
     private LocalDate registration_date;
     private String status;
     private LocalDate plan_end_date;
@@ -22,7 +22,7 @@ public class Enrollment {
         this.status = status;
     }
     
-    public Enrollment(int id, int member_id, int payment_plan_id, LocalDate registration_date, String status, LocalDate plan_end_date) {
+    public Enrollment(int id, int member_id, Integer payment_plan_id, LocalDate registration_date, String status, LocalDate plan_end_date) {
         this.id = id;
         this.member_id = member_id;
         this.payment_plan_id = payment_plan_id;
@@ -47,11 +47,11 @@ public class Enrollment {
         this.member_id = member_id;
     }
 
-    public int getPayment_plan_id() {
+    public Integer getPayment_plan_id() {
         return payment_plan_id;
     }
 
-    public void setPayment_plan_id(int payment_plan_id) {
+    public void setPayment_plan_id(Integer payment_plan_id) {
         this.payment_plan_id = payment_plan_id;
     }
 
