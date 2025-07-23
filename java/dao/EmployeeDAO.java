@@ -63,7 +63,7 @@ public class EmployeeDAO {
                     + " position = ?,"
                     + " salary = ?,"
                     + " payment_day = ?"
-                    + " WHERE id = ?)";
+                    + " WHERE id = ?";
                     
             PreparedStatement stmt = con.prepareStatement(sql);     
             
@@ -77,6 +77,7 @@ public class EmployeeDAO {
             stmt.setString(8, employee.getPosition());
             stmt.setBigDecimal(9, employee.getSalary());
             stmt.setInt(10, employee.getPayment_day());
+            stmt.setInt(11, id);
             
             int rowsAffected = stmt.executeUpdate();
             
@@ -96,7 +97,7 @@ public class EmployeeDAO {
         try{
             Connection con = ConnectionFactory.getConnection();
             
-            String sql = "DELETE * FROM employees WHERE id = ?";
+            String sql = "DELETE FROM employees WHERE id = ?";
             
             PreparedStatement stmt = con.prepareStatement(sql);
             
@@ -153,7 +154,10 @@ public class EmployeeDAO {
         
     }
     
-    public Optional<List<Employee>> findAll(){
+    public List<Employee> findAll(){
+        
+        ArrayList<Employee> employees = new ArrayList<>();
+        
         try{
             Connection con = ConnectionFactory.getConnection();
             
@@ -162,8 +166,6 @@ public class EmployeeDAO {
             PreparedStatement stmt = con.prepareStatement(sql);
             
             ResultSet rs = stmt.executeQuery();
-            
-            ArrayList<Employee> employees = new ArrayList<>();
             
             while(rs.next()){
                 Employee employee = new Employee();
@@ -184,11 +186,11 @@ public class EmployeeDAO {
                 employees.add(employee);
             }
             
-            return Optional.ofNullable(employees);
+            return employees;
             
         }catch(SQLException e){
             e.printStackTrace();
-            return Optional.empty();
+            return employees;
         }
     }
     
@@ -237,7 +239,7 @@ public class EmployeeDAO {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setInt(1, id);
             
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             
             while(rs.next()){
                 String hash = rs.getString("password");
@@ -247,7 +249,7 @@ public class EmployeeDAO {
             
             return Optional.empty();
             
-        }catch(Exception e){
+        }catch(SQLException e){
             e.printStackTrace();
             return Optional.empty();
         }

@@ -78,7 +78,7 @@ public class PaymentPlanDAO {
         try{
             Connection con = ConnectionFactory.getConnection();
             
-            String sql = "DELETE * FROM payment_plans WHERE id = ?";
+            String sql = "DELETE FROM payment_plans WHERE id = ?";
             
             PreparedStatement stmt = con.prepareStatement(sql);
             
@@ -157,7 +157,10 @@ public class PaymentPlanDAO {
         }
     }
     
-    public Optional<List<PaymentPlan>> getAll() {
+    public List<PaymentPlan> findAll() {
+        
+        ArrayList<PaymentPlan> paymentPlans = new ArrayList<>();
+        
         try{
             Connection con = ConnectionFactory.getConnection();
 
@@ -166,8 +169,6 @@ public class PaymentPlanDAO {
             PreparedStatement stmt = con.prepareStatement(sql);
 
             ResultSet rs = stmt.executeQuery();
-
-            ArrayList<PaymentPlan> paymentPlans = new ArrayList<>();
 
             while(rs.next()){
                 PaymentPlan paymentPlan = new PaymentPlan();
@@ -181,11 +182,11 @@ public class PaymentPlanDAO {
                 paymentPlans.add(paymentPlan);
             }
 
-            return Optional.ofNullable(paymentPlans);
+            return paymentPlans;
             
         }catch(SQLException e){
             e.printStackTrace();
-            return Optional.empty();
+            return paymentPlans;
         }
     }
     

@@ -88,7 +88,7 @@ public class MemberDAO {
         try{
             Connection con = ConnectionFactory.getConnection();
 
-            String sql = "DELETE * FROM members WHERE id = ?";
+            String sql = "DELETE FROM members WHERE id = ?";
 
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setInt(1, id);
@@ -139,16 +139,17 @@ public class MemberDAO {
         }
     }
     
-    public Optional<List<Member>> findAll() {
+    public List<Member> findAll() {
+        
+        ArrayList<Member> members = new ArrayList<>();
+        
         try{
             Connection con = ConnectionFactory.getConnection();
 
             String sql = "SELECT * FROM members";
 
             PreparedStatement stmt = con.prepareStatement(sql);
-            ResultSet rs = stmt.executeQuery();
-
-            ArrayList<Member> members = new ArrayList<>();
+            ResultSet rs = stmt.executeQuery();            
 
             while(rs.next()){
                 Member member = new Member();
@@ -165,15 +166,17 @@ public class MemberDAO {
                 members.add(member);
             }
             
-            return Optional.ofNullable(members);
+            return members;
             
         }catch(SQLException e){
             e.printStackTrace();
-            return Optional.empty();
+            return members;
         }
     }
     
-    public Optional<List<Member>> findByName(String name) {
+    public List<Member> findByName(String name) {
+        ArrayList<Member> members = new ArrayList<>();
+        
         try{
             Connection con = ConnectionFactory.getConnection();
 
@@ -183,8 +186,6 @@ public class MemberDAO {
             stmt.setString(1, name + "%");
 
             ResultSet rs = stmt.executeQuery();
-
-            ArrayList<Member> members = new ArrayList<>();
 
             while(rs.next()){
                 Member member = new Member();
@@ -201,11 +202,11 @@ public class MemberDAO {
                 members.add(member);
             }
 
-            return Optional.ofNullable(members);
+            return members;
             
         }catch(SQLException e){
             e.printStackTrace();
-            return Optional.empty();
+            return members;
         }
     }
     
